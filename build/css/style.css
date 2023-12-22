@@ -1,0 +1,222 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(235, 18%, 26%);
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+
+.contenedor {
+  width: 60%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+img:not([alt=svg]) {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contenedor_update {
+  background-color: hsl(0, 0%, 100%);
+}
+@media (min-width: 768px) {
+  .contenedor_update {
+    display: flex;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+}
+.contenedor_update .contenido_update {
+  flex: 1;
+}
+.contenedor_update .contenedor-img {
+  display: none;
+}
+@media (min-width: 768px) {
+  .contenedor_update {
+    display: flex;
+  }
+  .contenedor_update .contenedor-img-mobile {
+    display: none;
+  }
+  .contenedor_update .contenedor-img {
+    display: block;
+  }
+}
+
+.contenido_update {
+  padding: 3rem;
+}
+.contenido_update .title {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.contenedor-item {
+  list-style: none;
+  padding: 1rem 0 1rem 0;
+}
+.contenedor-item li {
+  display: flex;
+  align-items: center;
+}
+.contenedor-item li p {
+  font-size: 1.2rem;
+  margin: 0.7rem 0 0.7rem 0;
+}
+.contenedor-item li img {
+  margin: 0 1rem 0 0;
+}
+
+.contact .labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact label {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.contact .input {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 2px solid hsl(231, 7%, 60%);
+  border-radius: 0.5rem;
+  width: 100%;
+}
+.contact .input::placeholder {
+  color: hsl(231, 7%, 60%);
+}
+.contact .btn {
+  border-radius: 0.5rem;
+  border: none;
+  width: 100%;
+  background-color: hsl(234, 29%, 20%);
+  padding: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+.contact .btn:hover {
+  cursor: pointer;
+  background-image: linear-gradient(270deg, #fb944c 0, #fe884c 12.5%, #ff7b4d 25%, #ff6e4f 37.5%, #ff5e52 50%, #fd4d56 62.5%, #fb3b5c 75%, #f82563 87.5%, #f4006c 100%);
+}
+.contact .error {
+  font-weight: bold;
+  color: #ff5e53;
+}
+
+.u_none {
+  display: none;
+}
+
+.contenedor-enviado {
+  background-color: hsl(0, 0%, 100%);
+  padding: 4rem;
+  height: 96vh;
+  display: none;
+}
+.contenedor-enviado.e_none {
+  display: block;
+}
+@media (min-width: 768px) {
+  .contenedor-enviado {
+    height: fit-content;
+    min-width: 30rem;
+    width: 30%;
+    border-radius: 3rem;
+  }
+}
+.contenedor-enviado img {
+  width: 4rem;
+  margin-bottom: 2rem;
+}
+.contenedor-enviado h1 {
+  margin: 0;
+  padding: 0.5rem;
+}
+.contenedor-enviado p {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .contenedor-enviado p {
+    margin: 2rem 0;
+  }
+}
+.contenedor-enviado p span {
+  font-weight: bold;
+}
+.contenedor-enviado .btn-f {
+  display: block;
+  border-radius: 0.5rem;
+  border: none;
+  width: 100%;
+  background-color: hsl(234, 29%, 20%);
+  padding: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 15rem;
+}
+@media (min-width: 768px) {
+  .contenedor-enviado .btn-f {
+    margin: 0;
+  }
+}
+.contenedor-enviado .btn-f:hover {
+  cursor: pointer;
+  background-image: linear-gradient(270deg, #fb944c 0, #fe884c 12.5%, #ff7b4d 25%, #ff6e4f 37.5%, #ff5e52 50%, #fd4d56 62.5%, #fb3b5c 75%, #f82563 87.5%, #f4006c 100%);
+}
+
+.contenedor-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.attribution {
+  background-color: hsl(0, 0%, 100%);
+  padding: 0.5rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .attribution {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: block;
+  }
+}
+.attribution p {
+  font-weight: 400;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(234, 29%, 20%);
+  font-weight: bold;
+}

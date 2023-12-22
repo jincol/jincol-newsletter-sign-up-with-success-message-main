@@ -1,0 +1,41 @@
+@use "base/variable" as v;
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body{
+    height: 100vh;
+    font-family: v.$roboto;
+    background-color: v.$charcoal_grey;
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+.contenedor{
+    width: 60%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+
+img:not([alt="svg"]){
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
